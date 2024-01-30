@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body id="body">
+<div id="fan">
+    <img src="/fan.png" alt="fan">
+</div>
+    <select name="submit" id="buton" onclick="changeColor()">
+        <option value="cyan">Cyan</option>
+    <option value="red" >Red</option>
+<option value="blue">Blue</option>
+<option value="grey" selected>Grey</option>
+<option value="white" >white</option></select>
+    <div id="box" style=" width:300px; height: 300px;"></div>
+    <div class="big-box" style="width: 500px; height: 500px; ">
+        <div class="One"  style="width:50px; height:50px; border-radius: 50%; background-color: red;"></div>
+            <div class="Two" style="width:50px; height:50px; border-radius: 50%; background-color: black;"></div>
+        <div class="Three" style="width:50px; height:50px; border-radius: 50%; background-color: blue;"></div>
+    <div class="Four" style="width:50px; height:50px; border-radius: 50%; background-color: green;"></div>
+    <div class="Five" style="width:50px; height:50px; border-radius: 50%; background-color: pink;"></div>
+    <div class="Six" style="width:50px; height:50px; border-radius: 50%; background-color: orange;"></div>
+    <div class="Seven" style="width:50px; height:50px; border-radius: 50%; background-color: purple;"></div>
+    <div class="Eight" style="width:50px; height:50px; border-radius: 50%; background-color: yellow;"></div>
+</div>
+    </div>
+    <video controls>
+        <source src="/MVI_0805.MP4" type="video/MP4">
+    </video>
+    <audio loop controls>
+        <source src="/OVERSLEPT.mp3" type="audio/mp3">
+        <source src="/i see nobody but u.mp3" type="audio/mp3">
+        <source src="/Kashmir Main Tu Kanyakumari(Lyrical)_Chennai Express _Shahrukh K, Deepika P,Sunidhi C,Arijit S,Neeti.m4a" type="audio/m4a">
+        <source src="/iamnotshane - Maybe My Soulmate Died (Lyrics).m4a" type="audio/m4a">
+        <source src="/Imagine Dragons - Believer (Lyrics).m4a" type="audio/m4a">
+        <source src="/Jack Ü - Where Are Ü Now (Vidya Vox Tamil Remix Cover) (ft. Satya Valli, Shankar Tucker).m4a" type="audio/m4a">
+        <source src="/Kashmir Main Tu Kanyakumari(Lyrical)_Chennai Express _Shahrukh K, Deepika P,Sunidhi C,Arijit S,Neeti.m4a" type="audio/m4a">
+    </audio>
+    <div id="img">
+    </div>
+    <button id="button" onclick="change()">Change Shoe</button>
+    <script>
+        let arr=[0,1,2,3,4,5];
+        const slicedArr = arr.slice(0,arr.length);
+        console.log(slicedArr);
+        let x=1;
+        let img = document.getElementById('img');
+        let change=document.getElementById('button');
+        change.addEventListener('click',()=>{
+            if(x<3){
+                x++;
+            }
+            else{
+                x=1;
+            }
+            img.innerHTML = `<img src="${x}.png">`;
+        })
+        let buton = document.getElementById('buton');
+        let box=document.getElementById('box');
+        buton.addEventListener('click',()=>{
+            
+        let color=buton.value;
+                body.style.backgroundColor=color;
+            })
+;
+    </script>
+</body>
+</html>

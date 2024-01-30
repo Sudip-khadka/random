@@ -1,0 +1,134 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    gap:50px;
+}
+#fan>img{
+    margin-top: 30px;
+    animation:rotate infinite 1ms; 
+}
+@keyframes rotate{
+   0%{
+    transform:rotate(0deg);
+   }
+   100%{
+    transform:rotate(360deg);
+   }
+}
+video{
+    width: 1000px;
+}
+.big-box{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.One{
+    position: absolute;
+    animation:one  3s ease-in-out 1s infinite alternate;
+}
+.Two{
+    position: absolute;
+    animation: two  3s ease-in-out 1s infinite alternate;
+}
+.Three{
+    position: absolute;
+    animation: three  3s ease-in-out 1s infinite alternate;
+}
+.Four{
+    position: absolute;
+    animation: four  3s ease-in-out 1s infinite alternate;
+}
+.Five{
+    position: absolute;
+    animation: five  3s ease-in-out 1s infinite alternate;
+}
+.Six{
+    position: absolute;
+    animation: six  3s ease-in-out 1s infinite alternate;
+}
+.Seven{
+    position: absolute;
+    animation: seven  3s ease-in-out 1s infinite alternate;
+}
+.Eight{
+    position: absolute;
+    animation: eight  3s ease-in-out 1s infinite alternate;
+}
+@keyframes one{
+    0%{
+        left:0%;
+    }
+    100%{
+        left:100%;
+    }
+}
+@keyframes two{
+    0%{
+        bottom:0%;
+    }
+    100%{
+        bottom:100%;
+    }
+}
+@keyframes three{
+    0%{
+        right: 0%;
+        bottom:0%;
+    }
+    100%{
+        right: 100%;
+        bottom:100%;
+    }
+}
+@keyframes four{
+    0%{
+        bottom:0%;
+        left:0%;
+    }
+    100%{
+        left:100%;
+        bottom:100%;
+    }
+}
+@keyframes five{
+    0%{
+        left: 0%;
+        top:0%;
+    }
+    100%{
+        left: 100%;
+        top:100%;
+    }
+}
+@keyframes six{
+    0%{
+        top:0%;
+        right:0%;
+    }
+    100%{
+        right:100%;
+        top:100%;
+    }
+}
+@keyframes seven{
+    0%{
+        right:0%;
+    }
+    100%{
+        right:100%;
+    }
+}
+@keyframes eight{
+    0%{
+        top:0%;
+    }
+    100%{
+        top:100%;
+    }
+}
